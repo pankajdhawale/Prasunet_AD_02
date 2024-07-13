@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".AddTask">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/add_task"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+    <EditText
+        android:id="@+id/enter_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_design"
+        android:hint="Enter Your Task Here"
+        android:textColor="@color/white"
+        android:minHeight="48dp"
+        android:layout_marginTop="20dp"
+        android:textColorHint="@color/white"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/task_add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/add_btn_design"
+        android:text="Add Task" />
+</LinearLayout>

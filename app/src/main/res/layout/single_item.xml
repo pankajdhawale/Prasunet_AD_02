@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardElevation="10dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp"
+    app:cardPreventCornerOverlap="true"
+    app:cardBackgroundColor="#B6C0F2">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="horizontal"
+           android:padding="5dp">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:layout_weight="1">
+               <TextView
+                   android:id="@+id/display_task"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="This is My Task One"
+                   android:textColor="@color/white"
+                   android:textStyle="bold"
+                   android:textSize="18sp"
+                   android:layout_weight="1"/>
+               <LinearLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <TextView
+                       android:id="@+id/tv_date"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="date"
+                       android:textColor="@color/white"
+                       />
+                   <TextView
+                       android:id="@+id/tv_time"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Time"
+                       android:textColor="@color/white"
+                       android:layout_marginLeft="10dp"/>
+               </LinearLayout>
+
+           </LinearLayout>
+          <LinearLayout
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+              <CheckBox
+                  android:id="@+id/check_task"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:paddingRight="10dp"/>
+
+              <ImageView
+                  android:id="@+id/update_img_btn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/edit_task"
+                  android:paddingRight="10dp"
+                  />
+              <ImageView
+                  android:id="@+id/delete_img_btn"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:src="@drawable/delete_task"
+                  android:paddingRight="10dp"
+                  />
+          </LinearLayout>
+
+
+       </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
